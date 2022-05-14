@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Presentation theme</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="showerStyles/styles.css" />
+    <link rel="stylesheet" href="mystyles.css" />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+
+  <!-- activate dark mode - add .dark-mode -->
+
+  <body class="shower list dark-mode">
+    <header class="caption">
+      <h1>Presentation theme</h1>
+      <p>Zahar Avsievich, SOFTSWISS</p>
+    </header>
+
+    <section class="slide" id="cover" style="padding: 0">
+      <img src="pictures/cover.png" alt="Zahar Avsievich" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">The biggest title</h2>
+    </section>
+
+    <section class="slide full">
+      <iframe
+        width="1920"
+        height="1080"
+        src="https://www.youtube-nocookie.com/embed/KAK-WAb9vow?controls=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="slide centered">
+      <div class="next text-on-transparent-bg">
+        <h2 class="shout">Text on transparent overlay</h2>
+      </div>
+      <div>Text</div>
+    </section>
+
+    <section class="slide">
+      <img
+        class="fit"
+        src="pictures/frontenders.png"
+        alt=".fit -- object-fit: cover for image"
+      />
+      <p class="copyright">
+        <a href="https://css-tricks.com/the-great-divide/">
+          The Great Divide. JANUARY 2019 — CHRIS COYIER
+        </a>
+      </p>
+    </section>
+
+    <section class="slide centered">Centered content</section>
+
+    <section class="slide centered">
+      <h2 class="shout shrink">Jumping content</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="complementary">Middle title. Is aligned on the left side</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        <a href="https://twitter.com/zavsievich">@ZAVSIEVICH</a>
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a href="https://youtu.be/vfM0gjLBLUE"
+            >Иван Бакаидов — Пандус для сайта</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide centered" style="background-color: #ffffff">
+      <img src="pictures/qr-link.svg" alt="Основы WAI-ARIA" width="50%" />
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Сделано в Shower</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="highlight/index.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="showerJS/shower.min.js"></script>
+    <script src="myscript.js"></script>
+  </body>
+</html>
